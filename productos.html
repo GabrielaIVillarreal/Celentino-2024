@@ -11,61 +11,70 @@
 <body>
 
     <header>
-        <a href="index.html"><img src="assets/images/logoSinFondo.png" class="logoTienda" alt="logo tienda"></a>
-        <nav>
-            <a class="enlace-nav" href="index.html">Inicio</a>
-            <a class="enlace-nav" href="sobre_nosotros.html">Sobre Nosotros</a>
-            <a class="enlace-nav" href="productos.html">Productos</a>
-            <a class="enlace-nav" href="contacto.html">Contacto</a>
-        </nav>
+        <div class="nav-section">
+            <a href="index.html"><img src="assets/images/logoSinFondo.png" class="logoTienda" alt="logo tienda"></a>
+            <nav>
+                <a class="nav-enlace" href="index.html">Inicio</a>
+                <a class="nav-enlace" href="sobre_nosotros.html">Sobre Mi</a>
+                <a class="nav-enlace" href="productos.html">Productos</a>
+                <a class="nav-enlace" href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+        
     </header>
-    
-    <main id="productos-main">
-        <div class="conteiner-cards">
-            <div class="card">
-                <div class="name-card">
-                    <p class="titulos-resaltados">Mantas Small</p>
+    <!-- las famosas Cards -->
+    <main id="main-productos">
+        <div class="cards-container">
+            <!-- card 1 -->
+            <div class="cards">
+                <div class="card-name">
+                    <h2 class="titulos-h2-resaltados">Mantas Small</h2>
                 </div>
-                <div class="image-card">
+                <div class="card-image">
                     <img src="assets/images/image-small.jpg" alt="manta nordica small">
                 </div>
-                <div class="text-card">
+                <div class="card-text">
                     <p>Manta Nórdica talle S (65cm x 120cm)</p>
                     <button class="card-button">Añadir al carrito</button>
                 </div>
             </div>
-            <div class="card">
-                <div class="name-card">
-                    <p class="titulos-resaltados">Mantas Medium</p>
+            <!-- card 2 -->
+            <div class="cards">
+                <div class="card-name">
+                    <h2 class="titulos-h2-resaltados">Mantas Medium</h2>
                 </div>
-                <div class="image-card">
+                <div class="card-image">
                     <img src="assets/images/image-medium.jpg" alt="manta nordica medium">
                 </div>
-                <div class="text-card">
+                <div class="card-text">
                     <p>Manta Nórdica talle M (65cm x 140cm)</p>
                     <button class="card-button">Añadir al carrito</button>
                 </div>
             </div>
-            <div class="card">
-                <div class="name-card">
-                    <p class="titulos-resaltados">Mantas Large</p>
+            <!-- card 3 -->
+            <div class="cards">
+                <div class="card-name">
+                    <h2 class="titulos-h2-resaltados">Mantas Large</h2>
                 </div>
-                <div class="image-card">
+                <div class="card-image">
                     <img src="assets/images/image-large.jpg" alt="manta nordica large">
                 </div>
-                <div class="text-card">
+                <div class="card-text">
                     <p>Manta Nórdica talle L (65cm x 160cm)</p>
                     <button class="card-button">Añadir al carrito</button>
                 </div>
             </div>
         </div>
+        <div class="whatsapp-logo">
+            <a href="https://www.whatsapp.com" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #10d130;"></i></a>
+        </div>
     </main>
 
     <footer>
-        <section id="icons">
+        <div id="footer-icons">
             <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        </section>
+        </div>
         <p>© 2024 Celentino. Todos los derechos reservados</p> 
     </footer>
 

@@ -13,14 +13,24 @@ body {
 
 }
 
-header { /* rgb(255, 255, 255)*/
-    background-color: rgb(255, 255, 255); 
+/* /////////////////Header/////////////// */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /*sombra para mejorar efecto*/
+}
+
+.nav-section {
+    background-color: rgb(255, 255, 255);
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 6rem;
     gap: 3rem;
+
 }
 
 .logoTienda {
@@ -32,7 +42,7 @@ nav {
     gap: 1rem;
 }
 
-.enlace-nav {
+.nav-enlace {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 500; /*representa el grosor de la fuente*/
@@ -40,23 +50,28 @@ nav {
     font-size: 1rem;
 }
 
-.enlace-nav:hover {
+.nav-enlace:hover {
     transition: .4s ease; /*ease: Define la curva de velocidad de la transición. ".4s" establece la duracion de la transicion */
     color: rgb(128, 128, 128);
-}
-
-main {
-    width: 150dvh;
-    margin: 2rem auto;
 }
 
 #parrafo-en-construccion {
     text-align: center;
 }
 
+/* //////////////////Titulos//////////////////// */
+
 h2 {
     text-align: center;
 }
+
+.titulos-h2-resaltados {
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+/* //////////////////Footer////////////////////// */
 
 footer {
     background-color:rgb(226, 187, 135);
@@ -70,7 +85,7 @@ footer {
     gap: 1rem;
 }
 
-#icons {
+#footer-icons {
     display: flex;
     gap: 1rem;
 }
@@ -86,18 +101,27 @@ footer {
     transform: scale(1.3); /*utilizo esta propiedad para que el logo se agrande un 30% cuando se selecciona*/
     color: rgb(128, 128, 128);
 }
+/*//////////////////////whatsapp logo////////////////*/
 
-.contact-main {
+.whatsapp-logo {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+}
+.fa-whatsapp {
+    font-size: 80px;
+}
+
+
+/* /////////////////////Contacto////////////////// */
+
+#main-contact {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
     text-align: center;
-}
-
-.titulos-resaltados {
-    font-weight: 600;
-    font-size: 1rem;
+    margin-top: 2rem;
 }
 
 #form-section {
@@ -116,12 +140,12 @@ textarea {
     font-family: 'Manrope', sans-serif;
 }
 
-.button-group {
+.form-button-group {
     display: flex;
     justify-content: space-between;
 }
 
-.atencion-al-cliente {
+.form-paragraph {
     text-align: center;
 }
 
@@ -133,21 +157,32 @@ textarea {
 
 }
 
-.conteiner-cards {
+.map {
+    width: 100%;
+}
+
+/* ////////////////////////Productos///////////////// */
+
+#main-productos {
+    width: 150dvh;
+    margin: 2rem auto;
+}
+
+.cards-container {
     display: flex;
     justify-content: center;
     gap: 2rem;
 }
 
 
-.name-card {
+.card-name {
     background-color: rgb(226, 187, 135);
     text-align: center;
     text-transform: uppercase;
     font-size: 1rem;
 }
 
-.image-card img {
+.card-image img {
     width: 100%;
 }
 
@@ -166,12 +201,45 @@ textarea {
     background-color: #9fc2eb;
 }
 
-.card {
+.cards {
+    background-color: #f1f1f1;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.card:hover {
+.cards:hover {
     background-color: #f0f8ff; /* Azul claro */
     transform: translateY(-5px); /* Eleva la tarjeta ligeramente */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta la sombra */
+}
+
+/* /////////////////////Sobre Mi///////////////// */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+    margin: 30px 100px;
+}
+
+.grid-container > div {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-size: 1rem;
+    /* border-radius: 40px; */
+    border: 5px solid rgb(226, 187, 135);
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+.item2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.item3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
 }

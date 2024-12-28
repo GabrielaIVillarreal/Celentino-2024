@@ -4,13 +4,13 @@ Celentino 2024 es mi primer proyecto personal, en vias de ser un e-commerce. Est
 
 Al navegar notaras que esta dividido en 4 secciones principales, las cuales se acceden desde la barra de navegacion superior:
 
--INICIO
+*INICIO
 En proceso de contenido.
--SOBRE MI
+*SOBRE MI
 Utilicé grid para crear una grilla que juegue de manera atractiva para contar la historia del preyecto.
--PRODUCTOS
+*PRODUCTOS
 Con Flexbox logre mostrar mis productos en forma de cards.
--CONTACTO
+*CONTACTO
 En la sección contacto se encuentra un form, que al completarlo y enviarlo devuelve un msj de entrega satisfactorio.
 Tambien utilice un iframe para colocar la ubicación del emprendimiento mediante Google maps.
 
@@ -28,7 +28,7 @@ Finalmente el FOOTER contiene marca registrada e iconos de logos de redes social
 *Tecnologías utilizadas
 - HTML5: Estructura del sitio web.
 - CSS3: Estilo y diseño.
-- JavaScript (opcional): [Describe cómo lo usas, si aplica].
+- JavaScript en proceso.
 - GitHub Pages: Hospedaje del sitio web
   "https://gabrielaivillarreal.github.io/Celentino-2024/"
 

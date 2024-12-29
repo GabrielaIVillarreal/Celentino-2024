@@ -21,9 +21,9 @@ Finalmente el FOOTER contiene marca registrada e iconos de logos de redes social
 
 *Características
 
-- Diseño responsivo en proceso
+- Diseño responsivo.
 - Navegación intuitiva.
-- Contenido interactivo
+- Contenido interactivo.
   
 *Tecnologías utilizadas
 - HTML5: Estructura del sitio web.
